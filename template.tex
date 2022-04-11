@@ -1,0 +1,104 @@
+\documentclass[11pt, a4paper, sans, colorlinks]{moderncv}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+
+\moderncvstyle{classic}
+\moderncvcolor{purple}
+
+\usepackage[scale=0.75]{geometry}
+ 
+\name{Maciej}{Błędkowski}
+%\title{Curriculum Vitae}
+\phone[mobile]{+48 725 033 880}
+\email{mble@tuta.io}
+\social[github]{mbledkowski}
+
+\begin{document}
+
+\definecolor{links}{HTML}{000000}
+\hypersetup{urlcolor=links}
+
+\makecvtitle
+
+\newcommand{\book}[2]{\cvlistitem{\textbf{#1}#2}}
+\newcommand{\course}[2]{\cvlistitem{\textbf{#1}#2}}
+
+\newcommand{\tech}[1]{\vskip -2mm  \textbf{Skills:} \ignorespaces #1 \ignorespaces \\}
+\newcommand{\responsibilities}[1]{\vskip -4mm \textbf{Responsibilities:} \ignorespaces #1 \ignorespaces \\}
+
+\newcommand{\skill}[1]{#1,}
+\newcommand{\fullskill}[1]{#1,}
+
+\section{Skills and Technologies}
+\cvitem{Frontend}{\textbf{TypeScript}, \textbf{Vue.js}, Vuex, \textbf{CSS}, Webpack, Babel, Eslint, React}
+
+\cvitem{Backend}{\textbf{TypeScript}, \textbf{Express.js}, \textbf{Node.js}, Python, Rust, C++}
+
+\cvitem{Infrastructure}{\textbf{Linux}, \textbf{Docker}, \textbf{Docker Compose}, \textbf{Ubuntu/Debian}, NixOS, GCI, Oracle Cloud, \textbf{Netlify}, Heroku, Firebase, Supabase}
+
+\cvitem{Design}{\textbf{Figma}, \textbf{Affinity Designer}, \textbf{Affinity Photo}, Adobe Photoshop, DaVinci Resolve}
+
+\section{Projects}
+
+\cventry{2022}{\href{https://github.com/oneacik/stampli}{Stampli}}{Affinity/SCSS/React/TypeScript}{}{}
+{Application for collecting loyalty stamps. \href{https://github.com/ksidelta/stampli}{https://github.com/ksidelta/stampli}}
+
+\cventry{2022}{\href{https://gitlab.com/SimLE/simle-website}{SimLE website}}{Affinity/HTML/CSS/Hugo}{}{}
+{Webpage for Politechnika Gdańska's science club - SimLE. Site: new.simle.pl \href{https://gitlab.com/SimLE/simle-website}{https://gitlab.com/SimLE/simle-website}}
+
+\cventry{2021-2022}{\href{https://github.com/mbledkowski/keycomp}{Keycomp}}{SCSS/Vue.js/Vuex/Chart.js/TypeScript/Python/Node.js/PostgreSQL}{}{}
+{Website with technical details about mechanical keyboard switches. Site: keycomp.co \href{https://github.com/mbledkowski/keycomp}{https://github.com/mbledkowski/keycomp}}
+
+\cventry{2021-2022}{\href{https://github.com/hspsh/dcr}{Dynamic Code Renderer}}{CSS/React/Express.js/Knex/TypeScript/Node.js/Docker}{}{}
+{Web application for rendering Graphviz's dot files \href{https://github.com/hspsh/dcr}{https://github.com/hspsh/dcr}}
+
+\cventry{2021}{\href{https://github.com/mbledkowski/mble.dk}{mble.dk}}{SCSS/Vue.js/Vuex/TypeScript}{}{}
+{My personal portfolio/blog website. Site: mble.dk \href{https://github.com/mbledkowski/mble.dk}{https://github.com/mbledkowski/mble.dk}}
+
+\cventry{2020}{\href{https://github.com/ajayyy/SponsorBlock/graphs/contributors}{SponsorBlock popup window}}{Affinity/HTML/SCSS/TypeScript}{}{}
+{Redesigned GUI for broadly used Chrome/Firefox extension. SponsorBlock is an extension whose main focus is on skipping advertisement sections of YouTube videos. \href{https://github.com/ajayyy/SponsorBlock}{https://github.com/ajayyy/SponsorBlock/}}
+
+\cventry{2020}{\href{https://github.com/mbledkowski/dnidomatury}{dni do matury}}{Affinity/CSS/JavaScript/Express.js/Node.js}{}{}
+{Web application for counting days from today to matura exam. Site: dnidomatury.herokuapp.com \href{https://github.com/mbledkowski/dnidomatury}{https://github.com/mbledkowski/dnidomatury}}
+
+\section{Education}
+
+\cventry{2021.03 - ...}{Wyższa Szkoła Bankowa in Gdańsku}{Computer Science degree, Front-End specialisation}{}{}
+{Student of the second year at WSB Universities}
+
+\pagebreak
+
+\section{Language}
+
+\cventry{}{English}{C1}{}{}
+{I know English well enough to be able to read technical documentation and communicate with other people. My score on the advanced level English language matura exam was 89\%. }
+
+\cventry{}{Polish}{C2 (native)}{}{}{}
+
+\section{Presentations and Workshops}
+
+\cventry{2021.09}{Linux Party}{Hackerspace Pomorze}
+{}{}
+{A presentation about Desktop Environments and Window Managers available for Linux.}
+
+\section{Books}
+%\book{Clean Code}{ by Robert C. Martin, currently reading}
+\book{You Don't Know JS Yet: Get Started}{ by Kyle Simpson}
+\book{You Don't Know JS Yet: Scopes and Closures}{ by Kyle Simpson}
+\book{The Rust Programming Language}{ (currently reading)}
+\book{Refactoring UI}{ by Steve Schoger and Adam Wathan}
+
+\section{Courses}
+
+\course{Introduction to Vue 3}{ on FrontendMasters by Sarah Drasner}
+\course{Learn React}{ on Scrimba}
+
+\section{Organisations}
+
+\cventry{2019.08 - ...}{Hackerspace Pomorze}{}{}{}
+{
+Space for people interested in technology.\\
+Place where tech-savvy people can meet together and exchange their knowledge about different topics.
+}
+
+\end{document}
